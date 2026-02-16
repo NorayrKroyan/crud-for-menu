@@ -1,0 +1,104 @@
+.modalOverlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.25);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:16px;
+    z-index:50;
+}
+
+.modalCard{
+    width:min(980px, 100%);
+    background:#fff;
+    border-radius:8px;
+    box-shadow:0 20px 60px rgba(0,0,0,.20);
+    overflow:hidden;
+}
+
+.modalHeader{
+    padding:10px 14px;
+    border-bottom:1px solid #e5e7eb;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.modalTitle{
+    font-weight:900;
+    font-size:14px;
+    color:#111827;
+    display:flex;
+    gap:10px;
+    align-items:center;
+}
+
+.pillDeleted{
+    font-size:12px;
+    font-weight:900;
+    padding:3px 8px;
+    border-radius:999px;
+    background:#fee2e2;
+    color:#991b1b;
+}
+
+.iconBtn{
+    border:none;
+    background:transparent;
+    cursor:pointer;
+    font-size:18px;
+    line-height:1;
+    padding:4px 8px;
+    border-radius:6px;
+}
+.iconBtn:hover{ background:#f3f4f6; }
+
+.modalBody{
+    padding:18px 22px;
+}
+
+/* form like screenshot: 2 columns with label on left */
+.formTwoCol{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:40px;
+}
+
+.formCol{ display:flex; flex-direction:column; gap:12px; }
+
+.row{
+    display:grid;
+    grid-template-columns: 150px 1fr;
+    gap:12px;
+    align-items:center;
+}
+
+.lbl{
+    text-align:right;
+    font-weight:900;
+    color:#111827;
+    font-size:13px;
+}
+
+.ctl{ width:100%; }
+
+.modalFooter{
+    padding:12px 14px;
+    border-top:1px solid #e5e7eb;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.actions{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+/* helpers (same as carrier) */
+.rowSpan { margin-top:10px; }
+.inputSm { max-width:160px; }
+.billingHeader{ display:flex; align-items:center; justify-content:flex-start; margin-bottom:6px; }
+.billingHint{ font-size:12px; color:#777; }

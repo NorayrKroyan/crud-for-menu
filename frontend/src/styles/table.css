@@ -1,0 +1,137 @@
+.table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.table th{
+    text-align:left;
+    font-size:14px;
+    color:#111827;
+    background:#f3f4f6;
+    padding:8px 3px;
+    border-bottom:0px solid var(--border);
+    font-weight:900;
+    line-height:1;
+}
+
+.table td{
+    padding:8px 3px;
+    border-bottom:1px solid #e5e7eb;
+    vertical-align:middle;
+    background:#fff;
+    line-height:1;
+}
+
+.link{
+    color:var(--primary);
+    font-weight:500;
+    text-decoration:none;
+}
+.link:hover{ text-decoration:underline; }
+
+.pill{
+    margin-left:8px;
+    font-size:11px;
+    font-weight:900;
+    padding:2px 7px;
+    border-radius:999px;
+    background:#fee2e2;
+    color:#991b1b;
+}
+
+.empty{
+    text-align:center;
+    padding:16px;
+    color:var(--muted);
+}
+
+/* DataTables header section */
+.dtControls{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 12px;
+    background:#f3f4f6;
+    border-bottom:1px solid var(--border);
+    gap:12px;
+}
+
+.dtLeft, .dtRight{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.dtSelect{
+    border:1px solid #d1d5db;
+    border-radius:6px;
+    padding:5px 8px;
+    background:#fff;
+}
+
+.dtToggle{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin-left:10px;
+    font-weight:800;
+    font-size:13px;
+    color:#111827;
+}
+
+.dtSearchLabel{
+    font-weight:800;
+    font-size:13px;
+    color:#111827;
+}
+
+.dtSearchInput{
+    border:1px solid #d1d5db;
+    border-radius:6px;
+    padding:6px 8px;
+    min-width:180px;
+    background:#fff;
+}
+
+/* Footer pagination */
+.dtFooter{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 12px;
+    background:#fff;
+}
+
+.dtInfo{ color:var(--muted); font-size:13px; }
+
+.dtPager{ display:flex; gap:8px; }
+.dtPagerBtn{
+    border:1px solid #d1d5db;
+    border-radius:6px;
+    padding:6px 10px;
+    background:#fff;
+    cursor:pointer;
+    font-weight:800;
+}
+.dtPagerBtn:disabled{ opacity:.6; cursor:not-allowed; }
+.dtPagerBtn:not(:disabled):hover{ background:#f9fafb; }
+
+/* alternating row shading */
+.striped tbody tr:nth-child(even) td{
+    background:#f5f5f5;
+}
+
+/* GPS icon column */
+.colGps{ width:90px; text-align:left; }
+
+.mapLink{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:28px;
+    height:28px;
+    border-radius:6px;
+    text-decoration:none;
+}
+.mapLink:hover{ background:#e5e7eb; }
